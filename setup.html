@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Howzatt! Cricket Scorekeeper</title>
+  <!-- Link CSS file -->
+  <link rel="stylesheet" href="setup.css" />
+  <!-- Import JavaScript file -->
+  <script src="../score.js" defer></script>
+</head>
+<body>
+  
+  <body>
+    <div class="container">
+        
+      <!-- Left Gold Section -->
+      <div class="gold-section">
+        <h2>Welcome to Howzatt!</h2>
+        <p>Set up your 2 overs Five-a-side team match quickly. Let's Play!</p>
+      </div>
+  
+      <!-- Right White Form Section -->
+      <div class="form-section">
+        <div class="header">
+          <h1>Setup Match</h1>
+        </div>
+  
+        <div class="display">
+          <form id="form">
+            <label for="team1">Team 1 :</label>
+            <input type="text" class="input" id="team1" placeholder="Enter Team 1 Name" />
+  
+            <label for="team2">Team 2 :</label>
+            <input type="text" class="input" id="team2" placeholder="Enter Team 2 Name" />
+  
+            <label for="teams">Choose the Toss Winner :</label>
+            <select name="teams" id="teams"></select>
+  
+            <label for="toss">Choose the Toss Result :</label>
+            <select name="bat or bowl" id="toss">
+              <option value="bat">Bat</option>
+              <option value="bowl">Bowl</option>
+            </select>
+  
+            <button type="button" id="submit" onclick="startGame()">Start Game</button>
+          </form>
+        </div>
+  
+        <div class="footer">
+          <p>Howzatt! Cricket Scorekeeper<br><b style="color: red;">Prashant Meena</b><br><i>24b0949@iitb.ac.in</i></p>
+        </div>
+        </div>
+      
+    </div>
+  </body>
+</body>
+</html>

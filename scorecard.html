@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Summary</title>
+    <link rel="stylesheet" type="text/css" href="scorecard.css" />
+    <script src="../score.js" defer></script>
+  </head>
+  <body>
+    <audio autoplay loop id="bg-audio">
+      <source src="../Icc-World-Cup-2015-Theme.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+  <!-- window onload function or DOMContentLoaded has to be used -->
+  <div id="group">
+    <h1>Match Scorecard</h1>
+  <nav>
+      <a
+        href="javascript:void(0)"
+        id="firstInningTab"
+        class="active"
+        onclick="showInning('first')"
+        >First Inning</a
+      >
+      <a
+        href="javascript:void(0)"
+        id="secondInningTab"
+        onclick="showInning('second')"
+        >Second Inning</a
+      >
+  </nav>
+    <!-- First Inning Section -->
+  <div id="first" class="inning-section active">
+      <table id="first-inning-batters">
+        <tr><th colspan="6">First Inning Batters</th></tr>
+        <tr>
+          <th>Player</th>
+          <th>Runs</th>
+          <th>Balls</th>
+          <th>4s</th>
+          <th>6s</th>
+          <th>Strike Rate</th>
+        </tr>
+        <tr>
+          <td>player1</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+        <tr>
+          <td>player2</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+        <tr>
+          <td>player3</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+        <tr>
+          <td>player4</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+        <tr>
+          <td>player5</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+      </table>
+
+      <table id="first-inning-bowlers">
+        <tr><th colspan="5">First Inning Bowlers</th></tr>
+        <tr>
+          <th>Player</th>
+          <th>Balls</th>
+          <th>Runs Conceded</th>
+          <th>Wickets</th>
+          <th>Economy</th>
+        </tr>
+        <tr>
+          <td>player1</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+        <tr>
+          <td>player2</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+      </table>
+  </div>
+    <!-- Second Inning Section -->
+  <div id="second" class="inning-section">
+      <table id="second-inning-batters">
+        <tr><th colspan="6">Second Inning Batters</th></tr>
+        <tr>
+          <th>Player</th>
+          <th>Runs Conceded</th>
+          <th>Balls</th>
+          <th>4s</th>
+          <th>6s</th>
+          <th>Strike Rate</th>
+        </tr>
+        <tr>
+          <td>player1</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+        <tr>
+          <td>player2</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+        <tr>
+          <td>player3</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+        <tr>
+          <td>player4</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+        <tr>
+          <td>player5</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+      </table>
+
+      <table id="second-inning-bowlers">
+        <tr><th colspan="5">Second Inning Bowlers</th></tr>
+        <tr>
+          <th>Player</th>
+          <th>Balls</th>
+          <th>Runs</th>
+          <th>Wickets</th>
+          <th>Economy</th>
+        </tr>
+        <tr>
+          <td>player1</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+        <tr>
+          <td>player2</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+      </table>
+  </div>
+    <button type="button" onclick="go_toLive()">Live</button>
+    <!-- I have to make sure that live.html doesnt start from first so i have to updatelivescore() -->
+    </div>
+  </body>
+</html>

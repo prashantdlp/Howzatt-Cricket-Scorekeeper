@@ -1,0 +1,64 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body Style */
+  body {
+    font-family: 'Helvetica Neue', sans-serif;
+    background-color: paleturquoise;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  /* Result Paragraph */
+  #result {
+    font-size: 28px;
+    color: black;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  /* Conversation Div */
+  #conversation {
+    width: 80%;
+    max-width: 800px;
+    background-color: white;
+    text-decoration-color:#c5a017 ;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+    margin-bottom: 30px;
+  }
+  
+  /* Reset Button */
+  #reset {
+    padding: 14px 28px;
+    background-color: #d4af37;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  #reset:hover {
+    background-color: #c5a017;
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    #conversation {
+      width: 95%;
+      padding: 20px;
+    }
+  }
+  
