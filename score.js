@@ -97,7 +97,7 @@ if (window.location.pathname.includes("setup.html")) {
     // You can also store other game-related data as needed;
     // Store other game-related data as needed
     // Redirect to the live.html page
-    location.replace("../live\ page/live.html");
+    location.replace("../live_page/live.html");
   }
 
   team1Input.addEventListener("input", updateDropdown);
@@ -481,7 +481,7 @@ window.addEventListener('DOMContentLoaded', () => {
         }
 
         sessionStorage.setItem("winner_team", winner_team); // Store target in session storage
-        location.replace("../summary\ page/summary.html"); // Redirect to summary page
+        location.replace("../summary_page/summary.html"); // Redirect to summary page
       }
     }
   }
@@ -728,7 +728,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
   function see_scorecard() {
     // Redirect to scorecard.html page
-    location.replace("../scorecard\ page/scorecard.html");
+    location.replace("../scorecard_page/scorecard.html");
   }
 }
 
@@ -874,7 +874,7 @@ if (window.location.pathname.includes("scorecard.html")) {
 
   function go_toLive() {
     // Redirect to live.html page
-    location.replace("../live\ page/live.html");
+    location.replace("../live_page/live.html");
     updatelivescore(); // Update the live score
   }
 }
@@ -980,6 +980,6 @@ if (window.location.pathname.includes("summary.html")) {
 
   function reset() {
     sessionStorage.clear(); // Clear session storage
-    window.location.href = "../setup\ page/setup.html"; // Redirect to setup page
+    window.location.href = "../setup_page/setup.html"; // Redirect to setup page
   }
 }
